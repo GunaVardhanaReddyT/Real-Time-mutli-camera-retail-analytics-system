@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 Retail Analytics Dashboard</h1>
+            <div class="status-indicator">
+                <span id="connection-status" class="status-dot offline"></span>
+                <span id="status-text">Connecting...</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- Stats Cards -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <h3>Current Occupancy</h3>
+                    <div class="stat-value" id="current-count">0</div>
+                    <div class="stat-label">people in store</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Today's Footfall</h3>
+                    <div class="stat-value" id="total-footfall">0</div>
+                    <div class="stat-label">total visitors</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Peak Occupancy</h3>
+                    <div class="stat-value" id="peak-count">0</div>
+                    <div class="stat-label" id="peak-time">-</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Cameras</h3>
+                    <div class="stat-value" id="active-cameras">0</div>
+                    <div class="stat-label">cameras online</div>
+                </div>
+            </section>
+
+            <!-- Video Feeds -->
+            <section class="video-section">
+                <h2>Live Camera Feeds</h2>
+                <div class="video-grid" id="video-grid">
+                    <!-- Camera feeds will be added dynamically -->
+                </div>
+            </section>
+
+            <!-- Zone Analytics -->
+            <section class="zone-section">
+                <h2>Zone Analytics</h2>
+                <div class="zone-grid" id="zone-grid">
+                    <!-- Zone cards will be added dynamically -->
+                </div>
+            </section>
+
+            <!-- Charts -->
+            <section class="charts-section">
+                <div class="chart-container">
+                    <h3>Hourly Footfall</h3>
+                    <canvas id="hourly-chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Real-Time Occupancy</h3>
+                    <canvas id="realtime-chart"></canvas>
+                </div>
+            </section>
+
+            <!-- Heatmap -->
+            <section class="heatmap-section">
+                <h2>Traffic Heatmap</h2>
+                <div class="heatmap-container">
+                    <img id="heatmap-image" src="" alt="Heatmap">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Retail Analytics System v1.0.0 | <span id="last-update">-</span></p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

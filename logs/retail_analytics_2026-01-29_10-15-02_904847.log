@@ -1,0 +1,8 @@
+2026-01-29 10:15:02.920 | INFO     | src.main:lifespan:22 - Starting Retail Analytics System...
+2026-01-29 10:15:03.679 | INFO     | src.detection.person_detector:_load_model:49 - Loaded YOLO model: yolov8n
+2026-01-29 10:15:03.684 | ERROR    | src.camera.video_stream:start:35 - Failed to open camera cam_001: 0
+2026-01-29 10:15:03.685 | ERROR    | src.camera.camera_manager:start:166 - Failed to start processor for camera cam_001
+2026-01-29 10:15:03.685 | INFO     | src.main:lifespan:37 - System started successfully!
+2026-01-29 10:18:30.748 | INFO     | src.main:lifespan:42 - Shutting down...
+2026-01-29 10:18:30.749 | INFO     | src.camera.video_stream:stop:97 - Camera cam_001 stopped
+2026-01-29 10:18:30.749 | INFO     | src.main:lifespan:44 - Shutdown complete.

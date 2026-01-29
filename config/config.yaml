@@ -1,0 +1,43 @@
+# Retail Analytics Configuration
+system:
+  name: "Retail Analytics System"
+  version: "1.0.0"
+  debug: true
+
+cameras:
+  - id: "cam_001"
+    name: "Entrance Camera"
+    source: 0  # Use 0 for webcam, or RTSP URL
+    fps: 30
+    resolution:
+      width: 1280
+      height: 720
+    zones:
+      - name: "entrance"
+        points: [[100, 100], [400, 100], [400, 500], [100, 500]]
+      - name: "checkout"
+        points: [[500, 100], [800, 100], [800, 500], [500, 500]]
+
+detection:
+  model: "yolov8n"
+  confidence_threshold: 0.5
+  classes: [0]  # 0 = person in COCO
+
+tracking:
+  max_age: 30
+  min_hits: 3
+  iou_threshold: 0.3
+
+analytics:
+  heatmap_decay: 0.995
+  dwell_time_threshold: 5  # seconds
+  footfall_line_y: 360
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+
+redis:
+  host: "localhost"
+  port: 6379
+  db: 0

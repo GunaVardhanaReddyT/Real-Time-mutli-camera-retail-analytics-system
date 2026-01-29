@@ -1,0 +1,32 @@
+# ---------- Core ----------
+numpy<2
+opencv-python-headless
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+ultralytics
+
+# ---------- Tracking ----------
+filterpy
+scipy
+lap
+
+# ---------- API ----------
+fastapi
+uvicorn
+websockets
+python-multipart
+
+# ---------- Data & Caching ----------
+redis
+pydantic
+pydantic-settings
+
+# ---------- Utilities ----------
+PyYAML
+python-dotenv
+loguru
+
+# ---------- Testing ----------
+pytest
+pytest-asyncio
