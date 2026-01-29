@@ -5,7 +5,7 @@
 The Retail Analytics System captures and processes real-time video feeds from multiple cameras and provides actionable insights via a web dashboard and API endpoints. It is modular, scalable, and supports both local and distributed deployments.
 
 ### Architecture Overview
-
+```
 Input Layer: Camera feeds (USB/RTSP)
 │
 ▼
@@ -19,7 +19,7 @@ API Layer: FastAPI provides REST and WebSocket endpoints
 │
 ▼
 Presentation Layer: Web dashboard with real-time stats, video feeds, and charts
-
+```
 
 ## Module Breakdown
 
