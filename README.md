@@ -161,8 +161,9 @@ docker-compose up --build
 
 # OR run directly
 python -m src.main
-Access Points
 ```
+## Access Points
+
 **Dashboard**: http://localhost:8000/dashboard
 
 **API Docs**: http://localhost:8000/docs
