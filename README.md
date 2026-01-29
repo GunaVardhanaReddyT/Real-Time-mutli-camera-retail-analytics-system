@@ -164,11 +164,9 @@ python -m src.main
 ```
 ## Access Points
 
-**Dashboard**: http://localhost:8000/dashboard
+**Dashboard**: ```http://localhost:8000/dashboard```
 
-**API Docs**: http://localhost:8000/docs
-
-**Health Check**: http://localhost:8000/api/health
+**Health Check**: ```http://localhost:8000/api/health```
 
 ## Future Enhancements
 
